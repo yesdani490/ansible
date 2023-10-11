@@ -1,6 +1,13 @@
 - name:  variables in ansible
   hosts:  nginx
+  vars:
+    course:  DevOps
+    trainer: Kumar
+    Duration: 110hrs
   tasks:
   - name:  printing variables
     ansible.builtin.debug:
-     msg:  'I am learning Ansible variables'
+     msg:  'I am learning '
+  - name: printing message
+    ansible.builtin.debug:
+     msg:  'I am learning {{course}} with {{trainer}} and duration is {{Duration}}'
