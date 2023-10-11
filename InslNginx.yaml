@@ -1,6 +1,6 @@
 - name:  Install nginx and run.
   hosts:  nginx
-  become:  ture
+  become:  true
   tasks:
   - name:  Install nginx on node server
     ansible.builtin.yum:
