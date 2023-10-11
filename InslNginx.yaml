@@ -1,0 +1,12 @@
+- name:  Install nginx and run.
+  hosts:  nginx
+  become:  ture
+  tasks:
+  - name:  Install nginx on node server
+    ansible.builtin.yum:
+      name: nginx
+      state: installed
+  - name:  Install nginx on node server
+    ansible.builtin.service:
+      name: nginx
+      state: started
