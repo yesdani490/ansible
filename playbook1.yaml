@@ -2,6 +2,6 @@
   hosts: nginx
   become: true
   # this is list of tasks
-  task:
+  tasks:
   - name: pinging the nginx server
     ansible.builtin.ping:
