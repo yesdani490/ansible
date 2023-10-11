@@ -1,0 +1,6 @@
+- name:  variables in ansible
+  hosts:  nginx
+  tasks:
+  - name:  printing variables
+    ansible.builtin.debug:
+     msg:  'I am learning Ansible varibles'
