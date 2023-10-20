@@ -1,0 +1,16 @@
+- name: variables from file
+  hosts: localhost
+  vars: 
+  - money: "100"
+    land: "10 acres"
+    
+  tasks:
+  - name: inherit values form tasks
+    ansible.builtin.debug:
+     msg: '{{money}}, {{land}}'
+  - name: inherit values form tasks
+    vars:
+    - houses: "3 houses"
+      money: "200"
+    ansible.builtin.debug:
+     msg: '{{money}}, {{land}},{{houses}}'
