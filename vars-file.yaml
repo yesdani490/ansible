@@ -4,5 +4,5 @@
   - variable1.yaml
   tasks:
   - name: taking variables from file
-    ansible.builtin.debug
+    ansible.builtin.debug:
      msg: 'We are learning course: {{Course}} with trainer: {{Trainer}} and the duration is {{Duration}}'
