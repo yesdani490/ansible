@@ -1,5 +1,5 @@
 - name: ping the node
-  hosts: nginx
+  hosts: 172.31.36.51
   become: true
   # this is list of tasks
   tasks:
