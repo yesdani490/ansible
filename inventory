@@ -1,2 +1,6 @@
 [nginx]
 roboshop-uk-prod-web-nginx01.joindevops.top
+
+[nginx:vars]
+nginx_username=nginxadmin
+nginx_web=categories

@@ -1,0 +1,6 @@
+- name: variables from inventory
+  hosts: nginx
+  taks:
+  - name: print nginx username
+    ansible.builtin.debug:
+     msg: 'username is: {{nginx_username}}'
