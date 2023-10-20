@@ -9,6 +9,6 @@
     private: true
   tasks:
   - name: taking values form prompt
-    ansible.builtin.debug
+    ansible.builtin.debug:
      msg: 'my username is {{username}} and password is {{Password}}'
    
