@@ -3,6 +3,7 @@
   tasks:
   - name: checking roboshop user exits or not
     ansible.builtin.command: id roboshop
+    ignore_errors: true
     register: output
   - name: printi the output
     ansible.builtin.debug:
