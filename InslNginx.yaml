@@ -1,5 +1,5 @@
 - name:  Install nginx and run.
-  hosts:  172.31.36.51
+  hosts:  nginx
   become:  true
   tasks:
   - name:  Install nginx on node server

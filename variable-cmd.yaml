@@ -1,0 +1,6 @@
+- name: variables from file
+  hosts: localhost
+  tasks:
+   - name: print variables from cmd line
+     ansible.biuiltin.debug:
+      msg: ' we are learning {{course}}'
