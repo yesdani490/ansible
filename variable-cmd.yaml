@@ -2,5 +2,5 @@
   hosts: localhost
   tasks:
    - name: print variables from cmd line
-     ansible.biuiltin.debug:
+     ansible.builtin.debug:
       msg: ' we are learning {{course}}'
